@@ -98,7 +98,7 @@
 		}
 
 		// 创建XHR对象
-		var xhr= new XMLHttpRequest();
+		var xhr= createXHR();
 		// 监听，并处理返回数据(异步数据不可用全局变量取出，进行对象操作，因为取出执行时，异步数据尚未get；而应该在异步数据监听中，直接用函数处理，这样才能保证在异步数据get后才进行相应操作。)
 		xhr.onreadystatechange= function(){
 			if(xhr.readyState == 4){

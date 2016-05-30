@@ -93,7 +93,7 @@
 	}
 	// 验证用户信息
 	function ajaxcheck(path){
-		var xhr= new XMLHttpRequest();
+		var xhr= createXHR();
 		var url="http://study.163.com/webDev/login.htm?"+path;
 		xhr.onreadystatechange = function(){
 			if(xhr.readyState == 4){

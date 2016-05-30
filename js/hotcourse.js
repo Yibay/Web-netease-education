@@ -1,7 +1,7 @@
 // 封装函数
 (function(){
 	// 获取最热课程列表数据
-	var xhr= new XMLHttpRequest();
+	var xhr= createXHR();
 	xhr.onreadystatechange= function(){
 		if(xhr.readyState == 4){
 			if((xhr.status >= 200 && xhr.status < 300 )|| xhr.status == 304){
